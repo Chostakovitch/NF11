@@ -1,0 +1,94 @@
+fcc 4
+td 90
+av 132
+tg 45
+av 40
+tg 135
+av 100
+fcc 2
+td 90
+av 150
+tg 135
+fcc 1
+av 40
+tg 90
+av 40
+lc
+td 45
+av 93
+td 90
+fcc 4
+bc
+av 90
+tg 135
+av 40
+
+=====
+
+pour carre :n
+	donne "cote :n / 2
+	repete 4 [ av :cote td 90 ]
+	si :n != 0 [ carre :n - 10 ]
+fin
+
+carre 1000
+
+=====
+
+pour triangle :n :t
+	si :n < 4 [ lc bc ]
+[
+fcc hasard 5
+repete 3 [av :n td 120]
+donne "t :t + 1
+triangle :n / 2 :t
+lc av :n / 2 bc
+triangle :n / 2 :t
+lc td 120 av :n / 2 tg 120 bc
+triangle :n / 2 :t
+lc td 240 av :n / 2 td 120 bc
+]
+fin
+
+donne "t 0
+bc
+td 30
+triangle 60 :t
+
+
+=====
+
+pour triangle :n :t
+	si :n >= 4
+	[
+		fcc hasard 5
+		repete 3 [av :n td 120]
+		donne "t :t + 1
+		triangle :n / 2 :t
+		lc av :n / 2 bc
+		triangle :n / 2 :t
+		lc td 120 av :n / 2 tg 120 bc
+		triangle :n / 2 :t
+		lc td 240 av :n / 2 td 120 bc
+	]
+fin
+
+fpos 500 400
+donne "t 0
+td 30
+repete 24
+[
+	triangle 400 :t
+	td 15
+]
+
+=======
+
+pour fact :n
+si :n = 1
+[ donne "t 1]
+[donne "t :n * fact(:n -1)]
+rends :t
+fin
+
+av fact(5)
