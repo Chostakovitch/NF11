@@ -40,6 +40,6 @@ Il suffit alors d'écrire le programme et d'appuyer sur le bouton Exécuter pour
 
 ## Exemple
 
-Voici un exemple de dessin générét avec le langage créé. Il s'agit de 24 triangles de Sierpiński supersposés par rotations successives.
+Voici un exemple de dessin généré avec le langage créé. Il s'agit de 24 triangles de Sierpiński supersposés par rotations successives.
 
 ![Triangles de Sierpiński](/result.png)
