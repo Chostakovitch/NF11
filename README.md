@@ -7,7 +7,7 @@ Le projet NF11 P17 vise à re-créer un dérivé du langage [Logo](https://en.wi
 
 Le langage ainsi créé permet d'effectuer plusieurs opérations graphiques (avancer, reculer, changer de couleur...), d'évaluer des expressions arithmétiques, d'utiliser des conditions, des boucles, du hasard, ainsi que des procédures ou des fonctions (possiblement récursives). 
 
-## Fonctionnement
+## Fonctionnement
 
 Le projet s'appuie sur la bibliothèque Java [`ANTLR`](https://github.com/antlr/antlr4), un __générateur d'analyseur syntaxique__ descendant, *i.e.* `LL(*)` généralement utilisé pour construire des langages de programmation.
 
